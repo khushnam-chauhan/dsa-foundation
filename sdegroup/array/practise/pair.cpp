@@ -12,6 +12,4 @@ int main(){
     {
         cout<<"pairs :"<<makingPairs[i].first<< " "<<makingPairs[i].second<<endl;
     }
-      
-
 }
