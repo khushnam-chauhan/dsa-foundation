@@ -20,7 +20,6 @@ void separate(vector<int>& arr){
             swap(arr[start],arr[end]);
 
         }
-
     }
     
 
