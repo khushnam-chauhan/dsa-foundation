@@ -1,8 +1,10 @@
 #include<iostream>
 #include<vector>
+#include<set>
 using namespace std;
 vector<int> commonElement(int a[],int b[],int c[],int n1,int n2,int n3){
-    vector<int> common;
+    vector<int> ans;
+    set<int> common;
     for (int i = 0; i < n1; i++)
     {
         for (int j = 0; j < n2; j++)
@@ -11,7 +13,7 @@ vector<int> commonElement(int a[],int b[],int c[],int n1,int n2,int n3){
             {
                 if ((a[i]==b[j])&& (b[j]==c[k]))
                 {
-                    common.push_back(a[i]);
+                    common.insert(a[i]);
                 }
                 
             }
@@ -19,12 +21,15 @@ vector<int> commonElement(int a[],int b[],int c[],int n1,int n2,int n3){
         }
         
     }
-    return common;
+    for(auto i:common){
+        ans.push_back(i);
+    }
+    return ans;
 }
 int main(){
-    int a[]={1,2,3,4,5,6,9};
-    int b[]={2,3,4,6,7,8,9};
-    int c[]={1,3,4,6,7,8};
+    int a[]={1,2,3,3,4,5,6,9};
+    int b[]={2,3,4,3,6,7,8,9};
+    int c[]={1,3,4,3,7,8};
     int n1=sizeof(a)/sizeof(a[0]);
     int n2=sizeof(b)/sizeof(b[0]);
     int n3=sizeof(c)/sizeof(c[0]);
