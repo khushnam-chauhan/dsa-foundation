@@ -1,3 +1,7 @@
+//approach 1: using set 
+// approach 2: removing duplicates first 
+
+
 #include<iostream>
 #include<vector>
 #include<set>
@@ -5,6 +9,7 @@ using namespace std;
 vector<int> commonElement(int a[],int b[],int c[],int n1,int n2,int n3){
     vector<int> ans;
     set<int> common;
+    
     for (int i = 0; i < n1; i++)
     {
         for (int j = 0; j < n2; j++)
