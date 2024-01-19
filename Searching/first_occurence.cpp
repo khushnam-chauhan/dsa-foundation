@@ -55,6 +55,9 @@ int main(){
     vector<int> a={1,2,3,4,4,5,6,5,6,7,8};
     int target=4;
     int result= first_Occurence(a,target);
+    // algorithm lower bound
+    auto ans2=lower_bound(a.begin(),a.end(),target);
+    cout<<"ans2 = "<<ans2-a.begin()<<endl;
     if (result==-1)
     {
         cout<<"no occurence";
