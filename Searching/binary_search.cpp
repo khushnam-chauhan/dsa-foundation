@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 int binarySearch(vector<int> arr,int target){
@@ -30,6 +31,13 @@ int main(){
     int target;
     cout<<"enter the target = ";
     cin>>target;
+    
+    // with algorithm
+    // if(binary_search(a.begin(),a.end(),3)){
+    //     cout<<"found";
+    // }else{
+    //     cout<<"not found";
+    // }
 
     int result=binarySearch(a,target);
     if (result==-1){
@@ -41,3 +49,5 @@ int main(){
     }
     return 0;
 }
+
+
