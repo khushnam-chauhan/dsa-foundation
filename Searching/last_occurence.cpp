@@ -63,4 +63,5 @@ int main(){
         cout<<"last occourence at index "<<result;
     }
     return 0;
+    
 } 
