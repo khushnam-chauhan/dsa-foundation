@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 // by binary search
-int first_Occurence(vector<int> arr, int target){
+int last_Occurence(vector<int> arr, int target){
     int start=0;
     int end=arr.size()-1;
     int mid=(start+end)/2;
@@ -13,7 +13,7 @@ int first_Occurence(vector<int> arr, int target){
         if (arr[mid]==target)
         {
             store= mid;
-            end=mid-1;
+            start=mid+1;
          
         }
         else if (target>arr[mid])
@@ -52,15 +52,15 @@ int first_Occurence(vector<int> arr, int target){
 // }
 
 int main(){
-    vector<int> a={1,2,3,4,4,5,6,5,6,7,8};
+    vector<int> a={1,2,3,4,4,4,4,4,4,5,6,5,6,7,8};
     int target=4;
-    int result= first_Occurence(a,target);
+    int result= last_Occurence(a,target);
     if (result==-1)
     {
         cout<<"no occurence";
     }
     else{
-        cout<<"first occourence at index "<<result;
+        cout<<"last occourence at index "<<result;
     }
     return 0;
 } 
