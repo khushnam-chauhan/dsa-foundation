@@ -55,6 +55,8 @@ int main(){
     vector<int> a={1,2,3,4,4,4,4,4,4,5,6,5,6,7,8};
     int target=4;
     int result= last_Occurence(a,target);
+    auto ans2=upper_bound(a.begin(),a.end(),target);
+    cout<<"ans2 = "<<ans2-a.begin()<<endl;
     if (result==-1)
     {
         cout<<"no occurence";
@@ -63,5 +65,5 @@ int main(){
         cout<<"last occourence at index "<<result;
     }
     return 0;
-    
+
 } 
