@@ -34,5 +34,23 @@ int main(){
     cin>>n;
     int result=square_root(n);
     cout<<result;
+
+    double finalAns=result;
+    int precision;
+    cout<<"enter the number of decimal places you want : ";
+    cin>>precision;
+    double step=0.1;
+
+    for (int i = 0; i < precision; i++)
+    {
+        for (double j = finalAns; j*j<=n; j=j+step)
+        {
+            finalAns=j;
+        }
+        step=step/10;
+        
+    }
+    cout<<"after precision final ans : "<<finalAns;
+    
     return 0;
 }
