@@ -8,7 +8,10 @@ int n=4;
     {
         for (int j = n; j >0; j--)
         {
-            if (j==i || i==n)
+            if (j==i || i==n) //j==i means on every iteration 
+            // when value of j is equal to i
+            //i==n means whenever i=n i.e n=4 for now 
+            // whenever i or rows =4 or n print value of i
             {
                 cout<<i;
             }
