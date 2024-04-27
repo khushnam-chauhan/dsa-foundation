@@ -8,7 +8,7 @@ void reverseStr(char arr[]){
     int j=n-1;
     while(i<=j){
         swap(arr[i],arr[j]);
-        i++;chaman
+        i++;
         j--;
     }
 }
