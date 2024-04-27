@@ -13,7 +13,6 @@ int main(){
     getline(cin, str); // this take string with space
     //khushnam chauhan o/p- khushnam chauhan
     cout<< str;
-    
     return 0;
 
 }
