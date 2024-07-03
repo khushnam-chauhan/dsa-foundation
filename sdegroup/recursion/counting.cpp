@@ -1,15 +1,18 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int count(int n){
-    if (n==0){
-        return 0;
+void count(int n) {
+    int a=sizeof(n);
+    cout<<a<<endl;
+    if (n == 0) {
+        return;
     }
-    cout<<n<<endl;
-    return count(n-1);
+    cout << n << " ";
+    count(n - 1);
 }
 
-int main(){
-    int n= 5;
-    cout<<count(n);
+int main() {
+    int n = 54;
+    count(n);
+    return 0;
 }
