@@ -3,7 +3,7 @@
 using namespace std;
 
 void print(int arr[],int n,int i){
-    if(i>=n)
+    if(i>=n)// base case
         return;
     cout<<arr[i]<<" ";
     print(arr,n,i+1);

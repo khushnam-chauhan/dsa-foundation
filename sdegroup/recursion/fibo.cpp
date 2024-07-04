@@ -9,9 +9,18 @@ int fib(int n){
     int ans= fib(n-1)+fib(n-2);
     return ans;
 }
-
 int main(){
     int n=8;
     cout<<fib(n);
 
 }
+
+// int first=0;
+// int second=1;
+// int next=0;
+// for(int i=2; i<=n; i++){ //n=4
+//     next=first +second;// 1  
+//     // 0 1 1 ?
+// }
+// first = second;
+// second=next;
