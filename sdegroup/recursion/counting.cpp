@@ -7,12 +7,13 @@ void count(int n) {
     if (n == 0) {
         return;
     }
-    cout << n << " ";
     count(n - 1);
+    cout << n << " ";
 }
 
 int main() {
-    int n = 54;
+    int n = 6;
     count(n);
     return 0;
 }
+
