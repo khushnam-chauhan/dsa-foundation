@@ -33,7 +33,7 @@ int main() {
     if(ans){
         cout<<"Y";
     }else{
-        cout<<"N";
+        cout<<"n";
     }
     return 0;
 }
