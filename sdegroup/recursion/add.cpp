@@ -12,6 +12,10 @@ void print(int n)
     print(n-1);
     cout<<n<<" ";
 
+    // for descending order
+    // cout<<n<<" ";
+    // print(n-1);
+
 }
 
 int main(){
