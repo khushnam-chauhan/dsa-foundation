@@ -1,0 +1,50 @@
+recursion = function that calls itself
+
+int hello(){
+    printf("Hello, world!\n");
+    hello();
+}
+
+3 steps
+1. base case- program termination (conditions)
+2. 1 case - for only one case (smaller problem)  // print (1-8)
+bigger problem 
+1
+2
+3
+4
+5
+6
+7
+8
+
+smaller problem -
+
+cout<<n;
+
+3. recursive case-
+print(n-1)
+
+
+
+void print(int n){
+    if(n==0) return;
+    cout<<n<<endl;
+    print(n-1);
+}
+
+n=8;
+8
+7
+
+
+1
+
+
+
+
+user input n=
+print all no. till n.
+1 2 3 4 5 6 7 8
+
+

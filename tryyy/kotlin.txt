@@ -1,0 +1,46 @@
+open class person(val name:String, val age:Int){
+    open fun info(){
+        println("Name: $name, age:$age")
+    }
+}
+
+
+class student(name:String, age:Int, val studentid: String):person(name,age){
+    override fun info(){
+        super.info()
+        println("Student ID: $studentid")
+    }
+    
+}
+
+
+fun main(){
+    val student = student("khushnam chauhan", 23, "2301560048")
+    val student1 = student("Prayas jadaun", 24, "2301560025")
+    val student2 = student("DJ", 23, "2301560061")
+    val student3 = student("Anuj", 24, "2301560059")
+
+    student.info()
+    student1.info()
+    student2.info()
+    student3.info()
+    
+}
+
+
+
+
+
+
+class Krmu(val course: String, val stren: Int) {
+    fun info() {
+        println("Strength of the $course course is $stren")
+    }
+}
+
+fun main() {
+    val course1 = Krmu("MCA", 128)
+    val course2 = Krmu("BCA",70)
+    course1.info()
+    course2.info()
+}
