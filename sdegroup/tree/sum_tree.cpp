@@ -58,7 +58,7 @@ int main(){
     root->left->left=new TreeNode(4);
     root->left->right=new TreeNode(5);
 
-    cout<<sumTree(root);
+    cout<<sumTree(root)<<endl;
 
     cout<<"level order traversal: "<<endl;
     printLevelOrder(root);
